@@ -59,7 +59,7 @@ function App() {
 
   return ( 
     <> 
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header title="My Todos List" searchBar={false} /> 
       <Switch>
           <Route exact path="/" render={()=>{
